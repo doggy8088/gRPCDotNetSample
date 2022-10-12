@@ -2,6 +2,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\gRPCDotNetSample.Shared\gRPCDotNetSample.Shared.csproj" />
+    <Using Include="Grpc.Net.Client"></Using>
+    <Using Include="gRPCDotNetSample.Service"></Using>
   </ItemGroup>
 
   <PropertyGroup>

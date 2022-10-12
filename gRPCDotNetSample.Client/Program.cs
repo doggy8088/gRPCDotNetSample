@@ -1,7 +1,4 @@
-﻿using Grpc.Net.Client;
-using gRPCDotNetSample.Service;
-
-using var channel = GrpcChannel.ForAddress("https://localhost:7021");
+﻿using var channel = GrpcChannel.ForAddress("https://localhost:7021");
 var client = new Greeter.GreeterClient(channel);
 var reply = client.SayHello(new HelloRequest { Name = "GreeterClient" });
 
