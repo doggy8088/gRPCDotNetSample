@@ -3,19 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPCDotNetSample.Shared", "gRPCDotNetSample.Shared\gRPCDotNetSample.Shared.csproj", "{5BC31A60-C72F-47EE-BDB0-FC05D29CB228}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPCDotNetSample.Shared", "gRPCDotNetSample.Shared\gRPCDotNetSample.Shared.csproj", "{5BC31A60-C72F-47EE-BDB0-FC05D29CB228}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPCDotNetSample.Service", "gRPCDotNetSample.Service\gRPCDotNetSample.Service.csproj", "{F6CC8B46-0A66-41C8-9186-3AEE2172A8FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPCDotNetSample.Service", "gRPCDotNetSample.Service\gRPCDotNetSample.Service.csproj", "{F6CC8B46-0A66-41C8-9186-3AEE2172A8FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPCDotNetSample.Client", "gRPCDotNetSample.Client\gRPCDotNetSample.Client.csproj", "{97802054-FECF-452A-9277-523A48A64FF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPCDotNetSample.Client", "gRPCDotNetSample.Client\gRPCDotNetSample.Client.csproj", "{97802054-FECF-452A-9277-523A48A64FF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPCDotNetSample.WebApi", "gRPCDotNetSample.WebApi\gRPCDotNetSample.WebApi.csproj", "{593E605F-F849-4B4B-B63D-3ECE93FE8BA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5BC31A60-C72F-47EE-BDB0-FC05D29CB228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +29,15 @@ Global
 		{97802054-FECF-452A-9277-523A48A64FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97802054-FECF-452A-9277-523A48A64FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97802054-FECF-452A-9277-523A48A64FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593E605F-F849-4B4B-B63D-3ECE93FE8BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593E605F-F849-4B4B-B63D-3ECE93FE8BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593E605F-F849-4B4B-B63D-3ECE93FE8BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593E605F-F849-4B4B-B63D-3ECE93FE8BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {444D59A7-D061-4932-8F7B-90FB17016175}
 	EndGlobalSection
 EndGlobal
