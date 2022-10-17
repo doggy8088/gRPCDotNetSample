@@ -1,3 +1,4 @@
+using gRPCDotNetSample.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace gRPCDotNetSample.WebApi.Controllers
@@ -12,10 +13,12 @@ namespace gRPCDotNetSample.WebApi.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly Greeter.GreeterClient client;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, Greeter.GreeterClient client)
         {
             _logger = logger;
+            this.client = client;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -28,6 +31,12 @@ namespace gRPCDotNetSample.WebApi.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet("test")]
+        public HelloReply Get1()
+        {
+            return client.SayHello(new HelloRequest() { Name = "Will" });
         }
     }
 }
